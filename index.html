@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>app</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <div id="lang">
+            <div class="box2">
+                <div class="heading2">
+                    Setup Language!
+                </div>
+                <div class="bo">
+                    <button type="button" id="confirm1" onclick="op1()">Khmer</button>
+                </div>
+            </div>
+        </div>
+        <div id="khmer">
+        <center>
+            <div class="tit">
+                តើអ្នកចង់ទាយលើអ្វី?
+            </div>
+        <div class="menu">
+            <button type="button" onclick="men1()" id="s1">ទាយឈ្មោះ</button>
+            <button type="button" onclick="men2()" id="s2">លេខទូរស័ព្ទ</button>
+            <button type="button" onclick="men3()" id="s3">ទាយអាយុ</button>
+            <button type="button" onclick="men4()" id="s4">គូស្នេហ៍</button>
+        </div>
+        </center>
+        <center>
+        <div id="ip1">
+            <input type="text" placeholder="Enter Name" id="name">
+            <input type="text" placeholder="Enter Old" id="old">
+        </div>
+        <div id="ip2">
+            <input type="text" placeholder="Enter Phone" id="num">
+        </div>
+        <div id="ip3">
+            <input type="text" placeholder="Day" id="dat1">
+            <input type="text" placeholder="Month" id="dat2">
+            <input type="text" placeholder="Years" id="dat3">
+        </div>
+        <div id="ip4">
+            <input type="text" placeholder="ឈ្មោះតួប្រុស" id="name1">
+            <input type="text" placeholder="ឈ្មោះតួស្រី" id="name2">
+        </div>
+       </center>
+        <center>
+            <div id="ok">
+            <button type="button" onclick="showcustom()" id="show">show</button>
+            </div>
+        </center>
+        <div id="customAlert">
+            <div class="box">
+                <div class="heading">
+                    លទ្ធផលរបស់អ្នក
+                </div>
+                <div class="content">
+                    <p>អ្នកគឺជាមនុស្សដែលមានលក្ខណៈពិសេស!អ<br>អ្នកនឹកមានលាភសំណានៅក្នុងឆ្នាំនេះ</p>
+                    <button type="button" id="confirm" onclick="hide()">Back</button>
+                </div>
+            </div>
+        </div>
+        <div id="customAlert10">
+            <div class="box">
+                <div class="heading">
+                    លទ្ធផលរបស់អ្នក
+                </div>
+                <div class="content">
+                    <p>អ្នកគឺជាមនុស្សដែលមានលក្ខណៈពិសេស!<br>អ្នកនឹកមានលាភសំណានៅក្នុងឆ្នាំ2022<br>អ្នកនឹរៀបការនៅឆ្នាំ2024ខាងមុខនេះ</p>
+                    <button type="button" id="confirm" onclick="hide()">Back</button>
+                </div>
+            </div>
+        </div>
+    <script src="javascript.js" type="text/javascript"></script>
+   </div>
+    </body>
+</html>
