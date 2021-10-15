@@ -1,77 +1,156 @@
-<html>
-    <head>
-        <title>app</title>
-        <link rel="stylesheet" href="style.css" type="text/css">
-    </head>
-    <body>
-        <div id="lang">
-            <div class="box2">
-                <div class="heading2">
-                    Setup Language!
-                </div>
-                <div class="bo">
-                    <button type="button" id="confirm1" onclick="op1()">Khmer</button>
-                </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alone</title>
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-mobile-web-app-title" content="Sabay news"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="head">
+        <div class="container head-width">
+            <img class="logo" src="logo.png" alt="" height="80px" width="80px">
+            <P class="name">Al</P>
+            <img class="ads img-responsive" src="https://ads.sabay.com/images/334e8167d891bf7946eeee78dfb63f06.jpg" alt="">
+        </div>
+
+        <div class="allheadphone" style="top: 0; position: sticky;">
+            <div class=" col-4 head-phone" style=" float: left;">
+                <img class="menu-logo-phone1" src="menu.png" alt="" width="30px" height="30px">
+            </div>
+
+            <div class=" col-4 head-phone menu-logo-phone2" style=" float: left;">
+            A<span style="color: lime;">l</span>one
+            </div>
+
+            <div class=" col-4 head-phone" style=" float: left;">
+                <img class="menu-logo-phone3" src="logo.png" alt="" width="40px" height="40px">
             </div>
         </div>
-        <div id="khmer">
-        <center>
-            <div class="tit">
-                តើអ្នកចង់ទាយលើអ្វី?
+    </div>
+
+    <div class="head-menu-phone" style="background-color: rgb(255, 0, 43); float: left; width: 100%; height: 1cm; display: none;">
+        <div class="col-md-12 col-sm-12 col-12">
+            <img src="home-3-xl.png" alt="" height="25px" width="25px" style="margin-top: 6px;">
+        </div>
+    </div>
+    
+    <div class="items-menu-phone">
+        <div class="col-md-6 col-sm-6 col-6 text-menu-phone" style="background: rgb(0, 0, 0,0.9); float: left;">
+            <ul>
+                <li><a href="#">ចម្រៀង</a></li>
+                <li><a href="#">ចម្រៀង</a></li>
+                <li><a href="#">ចម្រៀង</a></li>
+                <li><a href="#">ចម្រៀង</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-6 col-sm-6 col-6 text-menu-phone" style="background: rgb(0, 0, 0,0.9); float: left;">
+            <ul>
+                <li><a href="#">ចម្រៀង</a></li>
+                <li><a href="#">ចម្រៀង</a></li>
+                <li><a href="#">ចម្រៀង</a></li>
+                <li><a href="#">ចម្រៀង</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="container menu-width">
+            <div class="home-width">
+                <img class="home" src="home-3-xl.png" alt="" width="25px" height="25px">  
             </div>
-        <div class="menu">
-            <button type="button" onclick="men1()" id="s1">ទាយឈ្មោះ</button>
-            <button type="button" onclick="men2()" id="s2">លេខទូរស័ព្ទ</button>
-            <button type="button" onclick="men3()" id="s3">ទាយអាយុ</button>
-            <button type="button" onclick="men4()" id="s4">គូស្នេហ៍</button>
-        </div>
-        </center>
-        <center>
-        <div id="ip1">
-            <input type="text" placeholder="Enter Name" id="name">
-            <input type="text" placeholder="Enter Old" id="old">
-        </div>
-        <div id="ip2">
-            <input type="text" placeholder="Enter Phone" id="num">
-        </div>
-        <div id="ip3">
-            <input type="text" placeholder="Day" id="dat1">
-            <input type="text" placeholder="Month" id="dat2">
-            <input type="text" placeholder="Years" id="dat3">
-        </div>
-        <div id="ip4">
-            <input type="text" placeholder="ឈ្មោះតួប្រុស" id="name1">
-            <input type="text" placeholder="ឈ្មោះតួស្រី" id="name2">
-        </div>
-       </center>
-        <center>
-            <div id="ok">
-            <button type="button" onclick="showcustom()" id="show">show</button>
-            </div>
-        </center>
-        <div id="customAlert">
-            <div class="box">
-                <div class="heading">
-                    លទ្ធផលរបស់អ្នក
-                </div>
-                <div class="content">
-                    <p>អ្នកគឺជាមនុស្សដែលមានលក្ខណៈពិសេស!អ<br>អ្នកនឹកមានលាភសំណានៅក្នុងឆ្នាំនេះ</p>
-                    <button type="button" id="confirm" onclick="hide()">Back</button>
-                </div>
-            </div>
-        </div>
-        <div id="customAlert10">
-            <div class="box">
-                <div class="heading">
-                    លទ្ធផលរបស់អ្នក
-                </div>
-                <div class="content">
-                    <p>អ្នកគឺជាមនុស្សដែលមានលក្ខណៈពិសេស!<br>អ្នកនឹកមានលាភសំណានៅក្នុងឆ្នាំ2022<br>អ្នកនឹរៀបការនៅឆ្នាំ2024ខាងមុខនេះ</p>
-                    <button type="button" id="confirm" onclick="hide()">Back</button>
-                </div>
+            <div class="menu-items">
+                <ul>
+                    <li><a href="#">ចម្រៀងខ្មែរ</a></li>
+                    <li><a href="#">កំប្លែងថ្មីៗ</a></li>
+                    <li><a href="#">វីដេអូទូទៅ</a></li>
+                    <li><a href="#">រឿងចម្រុះ</a></li>
+                    <li><a href="#">ប្លែកៗ</a></li>
+                    <li><a href="#" class="m3">កម្សាន្ដ</a></li>
+                    <li><a href="#" class="m2">វីដេអូតុក្តា</a></li>
+                    <li><a href="#" class="m1">ផ្សេងៗ</a></li>
+                    <li class="more"><a href="#">...</a></li>
+                </ul>
             </div>
         </div>
-    <script src="javascript.js" type="text/javascript"></script>
-   </div>
-    </body>
+    </div>
+
+    <div class="container drop" style="top: -3.17cm; position: sticky;">
+    <div class="more1">
+        <ul>
+            <div class="n0">
+                <li><a href="#">វីដេអូតុក្តា</a></li>
+            </div>
+
+            <div class="n1">
+                <li><a href="#">ផ្សេងៗ</a></li>
+            </div>
+
+            <li><a href="#" class="n">Help</a></li>
+            <li><a href="#" class="n">About</a></li>
+            <li><a href="#" class="n">Admin</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="space">
+            <div class="block1"></div>
+                <div class="box1">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LoYa9wHPDtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="box2">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LoYa9wHPDtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="box3">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LoYa9wHPDtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="box4">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LoYa9wHPDtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="box2">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LoYa9wHPDtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="box3">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LoYa9wHPDtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="title1">video songs [វីដេអូចម្រៀងចម្រុះ]</div>
+            </div> 
+        </div>
+    </div>   
+</body>
+<script>
+    $(document).ready(function(){
+    $('.menu-logo-phone1').click(function(){
+       $('.items-menu-phone').slideToggle();
+       $('.head-menu-phone').slideToggle();
+    });
+});
+
+$(document).ready(function(){
+    $('.more').click(function(){
+       $('.more1').slideToggle();
+    });
+});
+
+    </script>
 </html>
